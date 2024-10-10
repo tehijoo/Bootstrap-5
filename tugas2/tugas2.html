@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>It's Alya's Page</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 383px; /* Adjust as needed */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- OVERLAY -->
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
+
+    <!-- HEADER -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Alya's Page.</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="#alamat-sma" class="nav_link">Alamat SMA</a></li>
+                    <li class="nav_item"><a href="#youtube-favorit" class="nav_link">Youtube Favorit</a></li>
+                    <li class="nav_item"><a href="#top-10-websites" class="nav_link">Top 10 Websites</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="l-main bd-grid">
+        <!-- HOME SECTION -->
+        <div class="home" id="home">
+            <div class="home__information">
+                <span class="home__pressent anime-text">Hello, My name is</span>
+                <h1 class="home__title anime-text">Alya Rahmatillah</h1>
+                <h1 class="home__title anime-text">Machmud</h1>
+                <span class="home__skill anime-text">Web Developer</span>
+                
+                <div>
+                    <a href="https://drive.google.com/uc?export=download&id=1CmV4W6IKAZo6Z17m5yoNzQKm_pArru1J" class="home__button anime-text" target="_blank">MY CV</a>
+
+                </div>
+            </div>
+
+            <div class="home__img">
+                <a href='https://postimg.cc/hQnyL81w' target='_blank'>
+                    <img src='https://i.postimg.cc/XqGR0QGV/161-2.jpg' border='0' alt='161-2'/>
+                </a>
+            </div>
+            
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/alyarahmatillahmachmud/" target="_blank">
+                    <ion-icon name="logo-linkedin" class="home__social-icon"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/alyarmtilh" target="_blank">
+                    <ion-icon name="logo-instagram" class="home__social-icon"></ion-icon>
+                </a>
+                <a href="https://open.spotify.com/playlist/5aDG7IGLTGcAQvC0QlgX9L?si=tpFKww3fSvO_XB-IYBsiVg&pi=O4q_NbbuS9uAp" target="_blank">
+                    <svg class="home__social-icon" style="width: 24px; height: 24px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168">
+                        <circle cx="84" cy="84" r="84" fill="#000" />
+                        <path d="M124.5 114.9c-2.2 3.5-6.9 4.6-10.5 2.5-28.8-17.4-65-21.3-107.6-11.2-4 .9-8-1.3-8.9-5.2s1.3-8 5.2-8.9c46.2-10.8 87.6-6.3 120.6 13.4 3.6 2.1 4.6 6.8 2.5 10.5zm13-28.7c-2.9 4.7-9 6.1-13.7 3.2-33.6-20.2-85-26.1-124.3-13.7-5.1 1.6-10.5-1.2-12-6.4-1.6-5.1 1.2-10.5 6.4-12C62.6 49.5 121.2 56.2 159 80.2c4.7 2.9 6.1 9 3.2 13.7zm0-28.7c-2.9 4.7-9 6.1-13.7 3.2-33.6-20.2-85-26.1-124.3-13.7-5.1 1.6-10.5-1.2-12-6.4-1.6-5.1 1.2-10.5 6.4-12C62.6 21.5 121.2 28.2 159 52.2c4.7 2.9 6.1 9 3.2 13.7z" fill="#6A0DAD"/>
+                    </svg>
+                </a>
+                <!-- Ikon WhatsApp dengan warna ungu -->
+                <a href="https://wa.me/6282235788376" target="_blank">
+                    <svg class="home__social-icon" style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#6A0DAD">
+                        <path d="M12 0C5.372 0 0 5.373 0 12c0 2.117.55 4.155 1.593 5.954L0 24l6.27-1.627C8.068 23.45 10.048 24 12 24c6.628 0 12-5.372 12-12S18.628 0 12 0zm5.454 17.486c-.229.64-1.333 1.225-1.868 1.307-.479.073-1.09.104-3.687-1.177-3.1-1.418-5.078-4.898-5.233-5.126-.154-.228-1.243-1.655-1.243-3.156s.784-2.235 1.063-2.535c.278-.3.611-.383.83-.383s.415-.006.597.01c.194.017.453-.075.707.54.254.614.867 2.117.944 2.268.076.15.127.33.025.53-.097.198-.15.32-.299.497-.149.177-.315.394-.451.53-.15.149-.305.31-.132.61.172.298.762 1.257 1.638 2.037 1.128 1.006 2.074 1.32 2.373 1.47.299.15.473.127.647-.076.172-.204.745-.868.944-1.167.198-.3.398-.257.672-.155.273.103 1.73.816 2.027.964.299.149.497.23.572.36.075.131.075.755-.154 1.395z"/>
+                      </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Alamat SMA Section -->
+        <div class="container" id="alamat-sma">
+            <div class="section">
+                <h2>Alamat SMA</h2>
+                <div class="alamat-layout">
+                    <div class="alamat-info">
+                        <p>Saya bersekolah di <strong>Dayah Jeumala Amal</strong>, sebuah institusi pendidikan yang terletak di Kabupaten Pidie Jaya, Aceh. Dayah ini terkenal dengan sistem pendidikan yang menggabungkan ilmu pengetahuan umum dan agama. Untuk informasi lebih lanjut, kunjungi <a href="https://jeumalaamal.org/" target="_blank">website resmi Dayah Jeumala Amal</a>.</p>
+                        <p><strong>Alamat:</strong></p>
+                        <p>Jl. Banda Aceh-Medan KM.146,</p>
+                        <p>Meureudu, Pidie Jaya, Aceh, Indonesia.</p>
+                    </div>
+                    <div class="alamat-map">
+                        <div id="map"></div> <!-- Peta dengan Leaflet -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Top 10 Websites Section -->
+        <div class="container" id="top-10-websites">
+            <div class="section">
+                <h2>Top 10 Website Favorit</h2>
+<div class="website-grid">
+    <a href="https://www.discord.com" target="_blank">
+        <img class="link-img" src="assets/discord_1.jpeg" alt="Discord">
+    </a>
+    <a href="https://www.tiktok.com" target="_blank">
+        <img class="link-img" src="assets/Tiktok_1.jpeg" alt="TikTok">
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+        <img class="link-img" src="assets/twitter_1.jpeg" alt="Twitter">
+    </a>
+    <a href="https://www.github.com" target="_blank">
+        <img class="link-img" src="assets/github.png" alt="GitHub">
+    </a>
+    <a href="https://www.netflix.com" target="_blank">
+        <img class="link-img" src="assets/Netflix_1.jpeg" alt="Netflix">
+    </a>
+    <a href="https://www.hotstar.com" target="_blank">
+        <img class="link-img" src="assets/Disney_1.jpeg" alt="Hotstar">
+    </a>
+    <a href="https://www.spotify.com" target="_blank">
+        <img class="link-img" src="assets/Spotify_1.jpeg" alt="Spotify">
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+        <img class="link-img" src="assets/IG_1.jpeg" alt="Instagram">
+    </a>
+    <a href="https://www.youtube.com" target="_blank">
+        <img class="link-img" src="assets/Yt_1.jpeg" alt="YouTube">
+    </a>
+    <a href="https://www.whatsapp.com" target="_blank">
+        <img class="link-img" src="assets/WA_1.jpeg" alt="WhatsApp">
+    </a>
+</div>
+
+
+        <!-- YouTube Favorit Section -->
+        <div class="container video-section" id="youtube-favorit">
+            <h1>Video YouTube Favorit</h1>
+            <div class="img-portofolio">
+                <!-- Video YouTube Favorit 1 -->
+                <iframe src="https://www.youtube.com/embed/gyWc6eXLWUE?autoplay=1&mute=1&si=Ai7TAiiEZWCEuEGe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <!-- Video YouTube Favorit 2 -->
+                <iframe src="https://www.youtube.com/embed/kM-94LhhQTs?autoplay=1&mute=1&si=RByN8k-bYQeYi9SP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <!-- Video YouTube Favorit 3 -->
+                <iframe src="https://www.youtube.com/embed/3fHqZoCyRBY?autoplay=1&mute=1&si=_kVgNdJUYP847AJ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+
+
+        <!-- Contact Section -->
+        <div class="container" id="contact">
+            <div class="section">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Inisialisasi peta
+        var map = L.map('map').setView([5.254671, 96.055955], 13);
+
+        // Tambahkan layer peta gelap
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://carto.com/">CartoDB</a>'
+        }).addTo(map);
+
+        // Tambahkan marker dengan ikon khusus
+        var customIcon = L.icon({
+            iconUrl: 'assets/alamat.png', 
+            iconSize: [32, 32], 
+            iconAnchor: [16, 32], // Titik di ikon yang akan diletakkan pada posisi marker
+            popupAnchor: [0, -32] // Titik popup muncul dari ikon
+        });
+
+        L.marker([5.254671, 96.055955], { icon: customIcon }).addTo(map)
+            .bindPopup('Haloo, saya bersekolah disini!')
+            .openPopup();
+    </script>
+
+    <!-- MAIN -->
+    <script src="assets/main.js"></script>
+    
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
